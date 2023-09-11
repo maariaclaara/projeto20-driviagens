@@ -10,7 +10,8 @@ export async function postCityDB(name) {
 
 
 export async function cityDB(name) {
-    const query = `SELECT * FROM cities WHERE name = $1;`;
+    
+    const query = `SELECT 1 FROM cities WHERE name = $1;`;
 
     const city = await db.query(query, [name]);
     return city.rows.length > 0;

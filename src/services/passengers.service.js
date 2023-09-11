@@ -7,5 +7,4 @@ async function createPassenger(firstName, lastName){
 };
 
 const passengerService = {createPassenger};
-
 export default passengerService;

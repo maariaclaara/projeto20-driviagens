@@ -7,3 +7,5 @@ export async function postPassengerDB(firstName, lastName) {
     const newPassenger = await db.query(query, [firstName, lastName]);
     return newPassenger.rows;
 };
+
+
